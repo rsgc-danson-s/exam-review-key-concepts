@@ -25,14 +25,24 @@ let canvas = Canvas(width: 400, height: 600)
 
 canvas.drawShapesWithFill = true
 canvas.fillColor = Color.init(hue: 190, saturation: 97, brightness: 82, alpha: 100)
+
+//make background
 canvas.drawRectangle(centreX: 200, centreY: 300, width: 400, height: 600)
- canvas.drawText(message: "blur", size: 200, x: 10, y: 400)
-for y in stride(from: 425, to: 0, by: -10) {
 
-        canvas.textColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: 20)
-        canvas.drawText(message: "blur", size: 200, x: 10, y: y)
+canvas.fillColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+canvas.drawText(message: "saturday", size: 15, x: 30, y: 560)
+canvas.drawText(message: "October 16 1993/8pm", size: 15, x: 30, y: 540)
+
+//make text
+canvas.drawText(message: "blur", size: 200, x: 10, y: 300)
+
+//loop that allows blur to go to bottom of page
+for y in stride(from: 325, to: -100, by: -10) {
+    //make text color black
+    canvas.textColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: 20)
+    //make the "blur" go to the bottom of the page, and make actual blur on text
+    canvas.drawText(message: "blur", size: 200, x: 10, y: y)
 }
-
 
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
