@@ -30,9 +30,13 @@ canvas.fillColor = Color.init(hue: 190, saturation: 97, brightness: 82, alpha: 1
 canvas.drawRectangle(centreX: 200, centreY: 300, width: 400, height: 600)
 
 canvas.fillColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: 100)
-canvas.drawText(message: "saturday", size: 15, x: 30, y: 560)
-canvas.drawText(message: "October 16 1993/8pm", size: 15, x: 30, y: 540)
-
+canvas.drawText(message: "saturday", size: 10, x: 15, y: 560)
+canvas.drawText(message: "october 16 1993/8pm", size: 11, x: 15, y: 550, kerning: -1.0)
+canvas.drawText(message: "mandela hall", size: 10, x: 135, y: 560, kerning: -1.0)
+canvas.drawText(message: "at university  of sussex", size: 11, x: 135, y: 550, kerning: -1.0)
+canvas.drawText(message: "special guest", size: 10, x: 270, y: 560)
+canvas.drawText(message: "salad, plus my life story", size: 10, x: 270, y: 550, kerning: -1.0)
+canvas.drawText(message: "￡6.50/￡5.50 advance", size: 10, x: 270, y: 530, kerning: -1.0)
 //make text
 canvas.drawText(message: "blur", size: 200, x: 10, y: 300)
 
